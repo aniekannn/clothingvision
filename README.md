@@ -1,8 +1,11 @@
 # Fashion Recognition System
 
-- A comprehensive real-time fashion recognition system that can identify clothing items and their brands using computer vision and deep learning. Built with PyTorch and OpenCV, this system provides high-accuracy detection and classification of fashion items from camera input.
+A comprehensive real-time fashion recognition system that can identify clothing items and their brands using computer vision and deep learning. Built with PyTorch and OpenCV, this system provides high-accuracy detection and classification of fashion items from camera input.
 
-Installation
+CHECK USAGE_GUIDE FOR INFO ON HOW TO USE
+
+---
+Installation:
 
 1. Clone the Repository
 - git clone https://github.com/aniekannn/clothingvision.git
@@ -17,18 +20,18 @@ Installation
 3. Install Dependencies
 - pip install -r requirements_simple.txt
 
-
-To Start
+---
+To Start:
 
 1. Activate Virtual Environment
 - source fashion_env/bin/activate  (On macOS/Linux)
 
 
 2. Run the Accurate Fashion Detection Demo
-- Run the main accurate detection demo (only detects clothing on your body)
-python accurate_camera_demo.py
+Runs the main accurate detection demo (only detects clothing on your body)
+- python accurate_camera_demo.py
 
-
+---
 Available Commands:
 
 1. Run accurate fashion detection
@@ -39,11 +42,11 @@ Available Commands:
 - python model_training.py
 - python fashion_ui.py
 
-- Manage datasets
-python dataset_manager.py
+3. Manage datasets
+- python dataset_manager.py
 
+---
 Key Modules
-
 - `accurate_camera_demo.py`: Main demo - Accurate fashion detection that only detects clothing on your body
 - `accurate_detection.py`: Core accurate detection algorithm with person detection and clothing region mapping
 - `fashion_recognition_system.py`: Main system with camera processing and detection
@@ -53,8 +56,9 @@ Key Modules
 - `dataset_manager.py`: Dataset management and preprocessing
 - `performance_optimizer.py`: Performance optimization and monitoring
 
+---
 To Create Dataset
-from dataset_manager import FashionDatasetManager
+- from dataset_manager import FashionDatasetManager
 
 - Initialize dataset manager
 manager = FashionDatasetManager("my_fashion_dataset")
@@ -68,7 +72,7 @@ manager.split_dataset(train_ratio=0.7, val_ratio=0.2, test_ratio=0.1)
 - Export in different formats
 manager.export_dataset("exported", "coco")
 
-
+---
 Training
 
 - Custom Model Training
