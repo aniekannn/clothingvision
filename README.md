@@ -2,29 +2,26 @@
 
 - A comprehensive real-time fashion recognition system that can identify clothing items and their brands using computer vision and deep learning. Built with PyTorch and OpenCV, this system provides high-accuracy detection and classification of fashion items from camera input.
 
-CHECK USAGE_GUIDE FOR INFO ON HOW TO USE
-
 Installation
 
 1. Clone the Repository
-git clone https://github.com/aniekannn/clothingvision.git
-cd clothingvision
+- git clone https://github.com/aniekannn/clothingvision.git
+- cd clothingvision
 
 2. Create Virtual Environment
-python -m venv fashion_env
-source fashion_env/bin/activate  # On macOS/Linux
+- python -m venv fashion_env
+- source fashion_env/bin/activate  (On macOS/Linux)
 
-fashion_env\\Scripts\\activate  # On Windows
+- fashion_env\\Scripts\\activate  (On Windows)
 
 3. Install Dependencies
-bash
-pip install -r requirements_simple.txt
+- pip install -r requirements_simple.txt
 
 
 To Start
 
 1. Activate Virtual Environment
-source fashion_env/bin/activate  # On macOS/Linux
+- source fashion_env/bin/activate  (On macOS/Linux)
 
 
 2. Run the Accurate Fashion Detection Demo
@@ -32,14 +29,15 @@ source fashion_env/bin/activate  # On macOS/Linux
 python accurate_camera_demo.py
 
 
-3. Available Commands
-- Run accurate fashion detection
-python accurate_camera_demo.py
+Available Commands:
 
-- Run individual system components
-python fashion_recognition_system.py
-python model_training.py
-python fashion_ui.py
+1. Run accurate fashion detection
+- python accurate_camera_demo.py
+
+2. Run individual system components
+- python fashion_recognition_system.py
+- python model_training.py
+- python fashion_ui.py
 
 - Manage datasets
 python dataset_manager.py
