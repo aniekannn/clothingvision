@@ -2,6 +2,8 @@
 
 - A comprehensive real-time fashion recognition system that can identify clothing items and their brands using computer vision and deep learning. Built with PyTorch and OpenCV, this system provides high-accuracy detection and classification of fashion items from camera input.
 
+CHECK USAGE_GUIDE FOR INFO ON HOW TO USE
+
 Installation
 
 1. Clone the Repository
