@@ -2,20 +2,22 @@
 
 A comprehensive real-time fashion recognition system that can identify clothing items and their brands using computer vision and deep learning. Built with PyTorch and OpenCV, this system provides high-accuracy detection and classification of fashion items from camera input.
 
-CHECK USAGE_GUIDE FOR INFO ON HOW TO USE
+*CHECK USAGE_GUIDE FOR INFO ON HOW TO USE*
 
 ---
 Installation:
 
 1. Clone the Repository
-- git clone https://github.com/aniekannn/clothingvision.git
-- cd clothingvision
+git clone https://github.com/aniekannn/clothingvision.git
+cd clothingvision
+
 
 2. Create Virtual Environment
 - python -m venv fashion_env
 - source fashion_env/bin/activate  (On macOS/Linux)
 
 - fashion_env\\Scripts\\activate  (On Windows)
+
 
 3. Install Dependencies
 - pip install -r requirements_simple.txt
@@ -37,10 +39,12 @@ Available Commands:
 1. Run accurate fashion detection
 - python accurate_camera_demo.py
 
+
 2. Run individual system components
 - python fashion_recognition_system.py
 - python model_training.py
 - python fashion_ui.py
+
 
 3. Manage datasets
 - python dataset_manager.py
@@ -60,30 +64,30 @@ Key Modules
 To Create Dataset
 - from dataset_manager import FashionDatasetManager
 
-- Initialize dataset manager
-manager = FashionDatasetManager("my_fashion_dataset")
+Initialize dataset manager
+- manager = FashionDatasetManager("my_fashion_dataset")
 
-- Add images with annotations
-manager.add_image("image.jpg", "shirt", "Nike", ["red", "cotton", "casual"])
+Add images with annotations
+- manager.add_image("image.jpg", "shirt", "Nike", ["red", "cotton", "casual"])
 
-- Split dataset
-manager.split_dataset(train_ratio=0.7, val_ratio=0.2, test_ratio=0.1)
+Split dataset
+- manager.split_dataset(train_ratio=0.7, val_ratio=0.2, test_ratio=0.1)
 
-- Export in different formats
-manager.export_dataset("exported", "coco")
+Export in different formats
+- manager.export_dataset("exported", "coco")
 
 ---
 Training
 
-- Custom Model Training
-from model_training import FashionTrainer, FashionDataset
+Custom Model Training
+- from model_training import FashionTrainer, FashionDataset
 
-- Create datasets
-train_dataset = FashionDataset("data/train", transform=train_transform)
-val_dataset = FashionDataset("data/val", transform=val_transform)
+Create datasets
+- train_dataset = FashionDataset("data/train", transform=train_transform)
+- val_dataset = FashionDataset("data/val", transform=val_transform)
 
-- Initialize trainer
-trainer = FashionTrainer(model, device)
+Initialize trainer
+- trainer = FashionTrainer(model, device)
 
-- Train model
-trainer.train(train_loader, val_loader, num_epochs=50)
+Train model
+- trainer.train(train_loader, val_loader, num_epochs=50)
