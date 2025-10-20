@@ -26,7 +26,7 @@ source fashion_env/bin/activate  # On macOS/Linux
 
 
 2. Run the Accurate Fashion Detection Demo
-# Run the main accurate detection demo (only detects clothing on your body)
+- Run the main accurate detection demo (only detects clothing on your body)
 python accurate_camera_demo.py
 
 
