@@ -76,7 +76,7 @@ class FashionDatasetManager:
         self.categories = [
             'shirt', 'pants', 'dress', 'jacket', 'shoes', 'hat', 'bag', 
             'watch', 'belt', 'tie', 'socks', 'underwear', 'swimwear', 
-            'coat', 'sweater'
+            'coat', 'sweater', 'hoodie', 'sweatpants'
         ]
         
         self.brands = [

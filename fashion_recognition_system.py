@@ -41,6 +41,8 @@ class ClothingCategory(Enum):
     SWIMWEAR = "swimwear"
     COAT = "coat"
     SWEATER = "sweater"
+    HOODIE = "hoodie"
+    SWEATPANTS = "sweatpants"
 
 @dataclass
 class DetectionResult:
