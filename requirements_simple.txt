@@ -1,0 +1,23 @@
+# Core ML and Computer Vision - compatible with Python 3.13
+torch
+torchvision
+opencv-python
+Pillow
+numpy
+
+# Data Processing
+pandas
+matplotlib
+seaborn
+
+# HTTP and Web
+requests
+
+# Performance and Optimization
+psutil
+
+# Logging and Utilities
+tqdm
+
+# Development and Testing (optional)
+pytest
