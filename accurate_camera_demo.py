@@ -30,10 +30,11 @@ class AccurateCameraDemo:
             logger.error("Failed to open camera")
             return False
         
-        # Set camera properties
+        # Set camera properties for smooth performance
         self.cap.set(cv2.CAP_PROP_FRAME_WIDTH, 640)
         self.cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 480)
         self.cap.set(cv2.CAP_PROP_FPS, 30)
+        self.cap.set(cv2.CAP_PROP_BUFFERSIZE, 1)  # Reduce buffer for lower latency
         
         logger.info("Camera initialized successfully")
         return True
@@ -57,11 +58,11 @@ class AccurateCameraDemo:
                 # Flip frame horizontally for mirror effect
                 frame = cv2.flip(frame, 1)
                 
-                # Detect clothing items ONLY on the person
+                # Detect clothing items ONLY on the person (fresh detection every frame)
                 detections = self.detector.detect_clothing_on_person(frame)
                 
-                # Draw detections
-                result_frame = self.detector.draw_clothing_detections(frame, detections)
+                # Draw detections on fresh frame copy
+                result_frame = self.detector.draw_clothing_detections(frame.copy(), detections)
                 
                 # Add performance info
                 self.frame_count += 1
