@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 """
 Simple but Accurate Clothing Detection Demo
 Focuses on smooth movement and accurate detection

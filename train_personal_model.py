@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 """
 Training Script for Personal Clothing Recognition Model
 Optimized for improving camera accuracy with your personal dataset

@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 """
 Test Improved Detection on Saved Images
 Tests the improved detection system on your captured images

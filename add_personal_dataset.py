@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 """
 Script to add your personal clothing dataset to the fashion recognition system.
 This script demonstrates how to add your own clothes photos with proper annotations.

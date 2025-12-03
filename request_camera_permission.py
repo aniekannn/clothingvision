@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 """
 Request Camera Permission
 Run this first to trigger macOS camera permission dialog

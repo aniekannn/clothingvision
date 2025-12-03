@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 """
 Accurate Fashion Recognition System with Person Detection
 Uses proper person detection + clothing classification for accuracy

@@ -1,6 +1,4 @@
-"""
-Setup script for Fashion Recognition System
-"""
+# Setup for Fashion Recognition System
 
 from setuptools import setup, find_packages
 import os
@@ -64,10 +62,12 @@ setup(
         ],
     },
     include_package_data=True,
+    
     package_data={
         "": ["*.json", "*.yaml", "*.yml", "*.txt", "*.md"],
     },
     keywords="fashion recognition, computer vision, clothing detection, brand identification, deep learning, pytorch, opencv",
+    
     project_urls={
         "Bug Reports": "https://github.com/yourusername/clothingvision/issues",
         "Source": "https://github.com/yourusername/clothingvision",
